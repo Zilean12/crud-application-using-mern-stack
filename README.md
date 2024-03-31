@@ -1,4 +1,5 @@
 # User Management System (CRUD App) 🚀
+<hr>
 
 ## Description
 
@@ -45,34 +46,4 @@ Users boast multiple phone numbers, fostering a one-to-many relationship. MongoD
 ### Many-to-Many
 
 Dive into the rich tapestry of user hobbies and skills! Users can indulge in multiple hobbies and skills, each associated with multiple users. MongoDB's array of references elegantly captures this many-to-many relationship.
-
-
-
-## Usage
-
-Once installed, unleash the power of the User Management System with a single command: 
-
-
-## Features
-
-Experience a plethora of functionalities:
-
-- Effortlessly add, update, and delete skills.
-- Seamlessly update addresses, hobbies, skills, and phone numbers.
-
-## Database Relationships
-
-Unlock the intricacies of our MongoDB database relationships:
-
-## One-to-One
-
-Each user in the system has a detail record associated with them. This is a one-to-one relationship. In MongoDB, this is typically modeled by embedding the detail document inside the user document.
-
-## One-to-Many
-
-Each user can have multiple phone numbers. This is a one-to-many relationship. In MongoDB, this is typically modeled by embedding an array of phone number documents inside the user document.
-
-## Many-to-Many
-
-Users can have multiple hobbies or skills, and each hobby or skill can be associated with multiple users. This is a many-to-many relationship. In MongoDB, this is typically modeled by using an array of references to the related documents. For example, each user document could have an array of references to the hobby documents that are associated with that user.
 
