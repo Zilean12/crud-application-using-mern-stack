@@ -1,17 +1,45 @@
 .userContainer {
-  margin: 40px auto 20px; /* Adjusted margin-top to 40px */
+  margin: 60px auto 40px; /* Adjusted margin-top to 60px and margin-bottom to 40px */
   width: 90%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  display: flex; /* Flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+}
+
+.searchContainer {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 20px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  margin-right: 10px;
+  font-size: 14px; /* Keep font size as it was */
+}
+
+.searchButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Keep font size as it was */
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
 }
 
 .userTable {
   padding: 20px;
-  width: 100%; /* Ensure table takes full width */
 }
 
 .styled-table {
@@ -45,29 +73,29 @@
 .addButton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  border: none; /* Remove border */
-  font-weight: bold; /* Make text bold */
-  text-transform: uppercase; /* Convert text to uppercase */
-  letter-spacing: 1px; /* Add letter spacing */
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .addButton:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 .addButton:focus {
-  outline: none; /* Remove focus outline */
+  outline: none;
 }
 
 .addButton:active {
-  transform: translateY(1px); /* Add slight vertical movement on click */
+  transform: translateY(1px);
 }
-
 
 .actionButtons button, .actionButtons a {
   background-color: #f44336;
@@ -75,14 +103,13 @@
   border: none;
   cursor: pointer;
   font-size: 14px;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-decoration: none;
   display: inline-block;
 }
 
-/* Adjusted margin-right for delete button */
 .actionButtons button.deleteButton {
   margin-right: 10px;
 }
