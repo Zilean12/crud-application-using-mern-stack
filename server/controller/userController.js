@@ -83,6 +83,28 @@ export const deleteUser = async(req, res) =>{
     }
 }
 
+
+export const search = async (req, res) => {
+    try {
+        const { query } = req.params;
+        const userData = await User.find({
+            $or: [
+                { name: { $regex: query, $options: 'i' } },
+                { email: { $regex: query, $options: 'i' } },
+                { address: { $regex: query, $options: 'i' } }, 
+            ],
+        });
+
+        if (!userData) {
+            return res.status(404).json({ msg: "User data not found" });
+        }
+
+        res.status(200).json(userData);
+    } catch (error) {
+        res.status(500).json({ error: error });
+    }
+};
+
 //-------------------------------------------------------------------------------
 
 
